@@ -11,6 +11,8 @@ variable "KT_PASS" {}
 # TF doesn't like interpolation-within-interpolation, 
 # so you have to create intermediate variables.
 # These are all built-in TF functions.
+# You may or may not need the username bit, depending on how your login is set up.
+# But you will need the .pem file for the Chef runs.
 locals {
   username = "${element(split("@", "${var.VRA_USER}"), 0 )}"
   user_key_path = "${join("", list("${local.username}", ".pem"))}"
@@ -27,7 +29,7 @@ variable "vra_tenant" {
 
 variable "vra_url" {
   description = "The URL for our internal VMWare cloud"
-  default = "your-cloud-address"
+  default = "your-vra-cloud-address"
 }
 
 variable "server_count" {
