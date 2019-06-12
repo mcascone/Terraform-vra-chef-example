@@ -1,4 +1,4 @@
-# Terraform-base
+# Terraform-vra-chef-example
 A very basic Terraform example to spin up a server on a vRa host and run Chef on it.
 
 I've left this repo in a working state as an example to build more advanced automation off of.
