@@ -9,7 +9,7 @@ The chef provisioning is tested and it works!
 # How to use this repo
 1. Clone it down to your local.
 2. Install [Terraform 11](https://releases.hashicorp.com/terraform/0.11.14/), and make sure it's on your `$PATH`
-    * As of this writing, the vra7 driver was not compatible with TF 12, so stick with 11 for now.
+    * [As of this writing, the vra7 driver was not compatible with TF 12](https://github.com/vmware/terraform-provider-vra7/issues/161), so stick with 11 for now.
 3. Set your environment variables: see [my powershell profile gist](https://gist.github.com/mcascone/7a12e98f9707991785fe4cc5bbe59eb2)
 3. Copy your chef private key into the local repo:
     
